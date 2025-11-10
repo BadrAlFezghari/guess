@@ -1,5 +1,7 @@
+# Calculons d'abord le nombre des fichiers
 nombre_fichiers=$(ls -1 | grep -v '^$' | wc -l)
 
+# Fonction permettant à l'utilisateur de deviner le nombre
 function demander_nombre(){
 read -p "Combien de fichiers se trouvent dans le répertoire actuel? " reponse
 }
